@@ -5,7 +5,11 @@ function Exercises() {
   return (
     <div>
       <Navbar title="Exercises" />
-      <WorkoutCard title="Preacher Curls" muscle="Biceps" />
+      <div className="[&>*]:mb-4">
+        <WorkoutCard title="Preacher Curls" muscle="Biceps" />
+        <WorkoutCard title="Tricep push-downs" muscle="Triceps" />
+        <WorkoutCard title="Lat pull-down" muscle="Back" />
+      </div>
     </div>
   );
 }
